@@ -77,7 +77,7 @@ public class LancamentoRepositoryImpl implements LancamentoRepositoryQuery {
 
 
 
-    private long total(LancamentoFilter lancamentoFilter) {
+    private Long total(LancamentoFilter lancamentoFilter) {
         CriteriaBuilder builder = manager.getCriteriaBuilder();
         CriteriaQuery<Long> criteria = builder.createQuery(Long.class);
         Root<Lancamento> root = criteria.from(Lancamento.class);
